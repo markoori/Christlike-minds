@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
+html{
+  background: url("img/Anse_Source_Dargent.jpg")  center fixed, url("gif/musicbac.mp4") left top repeat;
+  background-size: cover;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+
+}
+  header .option{
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float:left;
+
+
+  }
+  header .option button{
+    width: 24%;
+    height: auto;
+    margin-right:0px;
+    padding: 10px;
+    margin: 0px;
+    font-size:20px;
+    border:0px;
+    outline:0px;
+    background: transparent;
+  }
+  header .header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+  }
+  header .header h2{
+      text-align: center;
+    }
+    header .header h2 span{
+      color: tomato;
+    }
+  header .header .container {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+.bar2{
+  width: 25px;
+}
+.bar3{
+  width: 15px;
+}
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar3 {opacity: 0;}
+
+  .change .bar2 {
+    -webkit-transform: rotate(45deg) translate(1px, -1px);
+    transform: rotate(45deg) translate(1px, -1px);
+  }
+header .header .search{
+  margin-top: 15px;
+  font-size: 30px;
+}
+header .header .search input{
+  width: 100px;
+  height: 50px;
+  outline: 0px;
+  border-radius: 40px;
+  border: 0px;
+  padding-left: 50px;
+  font-size: 20px;
+  transition: 1s;
+}
+header .header .search input:focus{
+  width: 300px;
+}
+header .header .search .fa-search{
+  position: relative;
+  left: 50px;
+  color: black;
+}
+@media screen and (max-width:500px){
+  header .header .search input{
+    height: 30px;
+    width: 50px;
+    padding-left:
+
+  }
+  header .header .search input:focus{
+    width:200px;
+  }
+  header .header .search{
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  header .header .search .fa-search{
+    left: 25px;
+  }
+}
+
+.musicbac video{
+  display: block;
+
+}
+  .content{
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+  }
+  .artist, .album, .tracks{
+    display: none;
+    padding-top: 60px;
+  }
+  .songsb, .artistb, .albumb, .tracksb{
+    border:0px;
+    outline:0px;
+  }
+  .option .songsb{
+    background-color: red;
+  }
+  .songs{
+    background-color: rgba(255, 0, 0, 0.2);
+    padding-top: 60px;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    height:900px;
+  }
+  .songs a{
+    margin-top:10px;
+    display:block;
+  }
+  .artist h5{
+    font-size:40px;
+    background-color:#f2f2f2;
+    text-align:center;
+    stroke-dasharray:0px;
+
+  }
+  .test::before{
+    content: '';
+    background-color: red;
+    width:100%;
+    height: auto;
+
+
+  }
+  audio:focus{
+    outline:0px;
+    margin:0px;
+  }

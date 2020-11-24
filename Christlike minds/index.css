@@ -1,0 +1,119 @@
+  header h1 {
+  color: white;
+  text-align: center;
+  letter-spacing: 10px;
+}
+header .header, .design{
+background: linear-gradient(to left,rgba(255, 0, 0, 0.1),transparent);
+width:100%;
+height: auto;
+position: sticky;
+}
+header .header .logo h2{
+display: inline;
+position: relative;
+top: -14px;
+font-family: 'Big Shoulders Inline Text', cursive;
+}
+
+header .header .logo img{
+width: 50px;
+height: 50px;
+margin-left: 5px;
+}
+header .header nav{
+position: relative;
+top: -60px;
+text-decoration: none;
+
+}
+header .header nav .navlinks ul li {
+display: inline-flex;
+text-decoration: none;
+list-style: none;
+margin:10px;
+font-size: 20px;
+font-weight: bold;
+font-family: 'Josefin Sans', sans-serif;
+
+}
+header .header nav .navlinks > ul{
+float: right;
+}
+header .header nav .navlinks ul li .about{
+display: none;
+background-color: #f1f1f1;
+text-decoration: none;
+position: absolute;
+font-family: 'Big Shoulders Inline Text', cursive;
+font-family: 'Cabin', sans-serif;
+animation: animate 2s;
+
+}
+
+@keyframes animate {
+from{
+  opacity: 0%;
+}
+to{
+  opacity: 100%;
+}
+}
+@keyframes animate2 {
+from{
+  opacity: 100%;
+}
+to{
+  opacity: 0%;
+}
+}
+header nav .navlinks ul li #aboutus{
+cursor: pointer;
+}
+header nav .navlinks ul li .about ul li{
+display: block;
+margin-bottom: 30px;
+font-weight: 0px;
+text-align: left;
+text-decoration: none;
+}
+/* Style for the hamburger */
+header nav .hamburg{
+display: none;
+position: relative;
+left: 90%;
+}
+header nav .hamburg .container {
+display: inline-block;
+cursor: pointer;
+}
+
+header nav .hamburg .bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+header nav .hamburg .change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header nav .hamburg .change .bar2 {opacity: 0;}
+
+header nav .hamburg .change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* style for the hambuger ends */
+@media screen and (max-width:850px){
+header nav .navlinks{
+  display: none;
+}
+header nav .hamburg{
+  display: block;
+}
+}

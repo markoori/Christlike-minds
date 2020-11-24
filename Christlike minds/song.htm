@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="veiwport" content="width=width-device, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="song.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <h2><span>Christ-like Minds</span>  Songs</h2>
+        <div class="search">
+          <a href="#"><i class="fa fa-search"></i></a>
+          <input type="text" name="" value="" placeholder="Input search">
+        </div>
+      </div>
+
+      <div class="option">
+        <button class="songsb" type="button" name="button" onclick="songs()">Songs</button>
+        <button class="artistb" type="button" name="button" onclick="artist()">Artist</button>
+        <button class="albumb" type="button" name="button" onclick="album()">Album</button>
+        <button class="tracksb" type="button" name="button" onclick="tracks()">Genre</button>
+      </div>
+    </header>
+   <header>
+
+   </header>
+<div class="musicbac">
+  <video src="gif/musicbac.mp4"  autoplay id="video"  loop>
+  </video>
+  <button type="button" name="button" onclick="musice()">play</button>
+</div>
+
+    <div class="content">
+
+         <div class="songs">
+           <div id="dun">
+           <h3>Open up</h3>
+           <p>Dunsin Oyekan</p>
+           <audio src="music/worship/AUD-20170329-WA0004.mp3" controls loop onplay="music()" onpause="pmusic()">
+           </audio>
+           <a href="music/worship/AUD-20170329-WA0004.mp3">Download</a>
+         </div>
+           <br><br>
+
+
+           <h3>Hallelujah</h3>
+           <p>King Dareal</p>
+           <audio src="music/praise/King-Dareal-Hallelujah.mp3" controls loop >
+           </audio><br><br>
+
+           <h3>ODARA</h3>
+           <p>Psalmo</p>
+           <audio src="music/praise/ODARA-Psalmos.mp3" controls loop>
+           </audio><br><br>
+
+           <h3>Oga Ola</h3>
+           <p>Babatunmise ft kenny Kore</p>
+           <audio src="music/praise/Ogo Ola  - Babatunmise ft Kenny Kore.mp3" controls loop>
+           </audio><br><br>
+
+
+Ogo Ola  - Babatunmise ft Kenny Kore
+         </div>
+
+         <div class="artist">
+             <h5>Chris Ade</h5>
+             <a href="#dun" onclick="song()"><h5>Dunsin Oyekan</h5></a>
+             <h5>Chris Ade</h5>
+             <h5>Chris Ade</h5>
+             <h5>Chris Ade</h5>
+             <h5>Chris Ade</h5>
+             <h5>Chris Ade</h5>
+             <h5>Chris Ade</h5>
+             <h5>Chris Ade</h5>
+         </div>
+
+         <div class="album">
+           <h5>Chris Ade</h5>
+           <h5>Chris Ade</h5>
+           <h5>Chris Ade</h5>
+           <h5>Chris Ade</h5>
+           <h5>Chris Ade</h5>
+           <h5>Chris Ade</h5>
+           <h5>Chris Ade</h5>
+           <h5>Chris Ade</h5>
+           <h5>Chris Ade</h5>
+         </div>
+
+         <div class="tracks">
+           <h5>Worship</h5>
+           <h5>Hip Hop</h5>
+           <h5>Praise</h5>
+           <h5>Regea</h5>
+           <h5>Rap</h5>
+           <h5>Classic</h5>
+           <h5>Soacking</h5>
+           <h5></h5>
+           <h5>Chris Ade</h5>
+         </div>
+ </div>
+<div class="form">
+  <form class="rform" action="song.php" method="post">
+    <input type="file" name="song" value="">
+    <input type="submit" name="send" value="send">
+  </form>
+</div>
+ <div class="mal" style="background: url('img/others/rccgradio.png') no-repeat center ; background-position: center; width:200px; height:200px; mix-blend-mode:screen;">&nbsp;</div>
+ <h1 class="test" style="stroke-dasharray:-39px; mix-blend-mode:screen"> HELLO WORLD!</h1>
+  </body>
+</html>
+<script type="text/javascript" src="song.js"></script>
